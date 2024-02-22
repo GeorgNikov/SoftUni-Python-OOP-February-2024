@@ -1,16 +1,16 @@
 class Programmer:
-    def __init__(self, name, language, skills):
+    def __init__(self, name: str, language: str, skills: int):
         self.name = name
         self.language = language
         self.skills = skills
 
-    def watch_course(self, course_name, language, skills_earned):
+    def watch_course(self, course_name: str, language: str, skills_earned: int) -> str:
         if language in self.language:
             self.skills += skills_earned
             return f"{self.name} watched {course_name}"
         return f"{self.name} does not know {language}"
 
-    def change_language(self, new_language, skills_needed):
+    def change_language(self, new_language: str, skills_needed: int) -> str:
         if skills_needed <= self.skills and new_language != self.language:
             previous_language = self.language
             self.language = new_language
