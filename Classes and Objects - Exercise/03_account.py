@@ -1,6 +1,6 @@
 class Account:
-    def __init__(self, id: int, name: str, balance: int = 0):
-        self.id = id
+    def __init__(self, _id: int, name: str, balance: int = 0):
+        self.id = _id
         self.name = name
         self.balance = balance
 
@@ -8,7 +8,7 @@ class Account:
         self.balance += amount
         return self.balance
 
-    def debit(self, amount: int):
+    def debit(self, amount: int) -> str or int:
         if amount > self.balance:
             return 'Amount exceeded balance'
         self.balance -= amount
