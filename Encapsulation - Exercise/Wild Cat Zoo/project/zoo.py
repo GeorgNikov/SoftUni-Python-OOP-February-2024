@@ -64,11 +64,27 @@ class Zoo:
 
     def animals_status(self):
         result = f"You have {len(self.animals)} animals\n"
-        # result += f"----- {self.animals.n}"
-        return result
+        result += self.__get_obj_status_by_type('Lion', self.animals)
+        result += self.__get_obj_status_by_type('Tiger', self.animals)
+        result += self.__get_obj_status_by_type('Cheetah', self.animals)
 
+        return result.strip()
 
     def workers_status(self):
         result = f"You have {len(self.workers)} workers\n"
+        result += self.__get_obj_status_by_type('Keeper', self.workers)
+        result += self.__get_obj_status_by_type('Caretaker', self.workers)
+        result += self.__get_obj_status_by_type('Vet', self.workers)
+
+        return result.strip()
+
+    @staticmethod
+    def __get_obj_status_by_type(object_type, object_list):
+        objects = [str(x) for x in object_list if x.__class__.__name__ == object_type]
+
+        result = f'----- {len(objects)} {object_type}s:\n'
+
+        for obj in objects:
+            result += f"{obj}\n"
 
         return result
