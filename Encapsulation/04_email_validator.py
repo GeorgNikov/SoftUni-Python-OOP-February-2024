@@ -8,16 +8,16 @@ class EmailValidator:
         self.mails = mails
         self.domains = domains
 
-    def __is_name_valid(self, name: str):
+    def __is_name_valid(self, name: str) -> bool:
         return self.min_length <= len(name)
 
-    def __is_mail_valid(self, mail: str):
+    def __is_mail_valid(self, mail: str) -> bool:
         return mail in self.mails
 
-    def __is_domain_valid(self, domain: str):
+    def __is_domain_valid(self, domain: str) -> bool:
         return domain in self.domains
 
-    def validate(self, email: str):
+    def validate(self, email: str) -> bool:
         name, mail, domain = re.split('[@.]', email)
         return self.__is_name_valid(name) and self.__is_mail_valid(mail) and self.__is_domain_valid(domain)
 
