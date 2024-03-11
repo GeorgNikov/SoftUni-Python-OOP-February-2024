@@ -1,5 +1,5 @@
 from project.beverage.beverage import Beverage
-from project.food.soup import Soup
+from project.food import Soup
 from project.product import Product
 
 product = Product("coffee", 2.5)
