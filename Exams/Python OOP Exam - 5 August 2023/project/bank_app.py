@@ -1,10 +1,3 @@
-from project.loans.mortgage_loan import MortgageLoan
-from project.loans.student_loan import StudentLoan
-from project.clients.adult import Adult
-from project.clients.student import Student
-from project.clients.base_client import BaseClient
-from project.loans.base_loan import BaseLoan
-
 class BankApp:
     VALID_LOANS = ["StudentLoan", "MortgageLoan"]
     VALID_CLIENT = ["Student", "Adult"]

@@ -1,5 +1,5 @@
 from unittest import TestCase, main
-from project.student import Student
+from project import Student
 
 
 class TestStudent(TestCase):

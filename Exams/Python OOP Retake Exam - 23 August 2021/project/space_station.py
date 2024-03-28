@@ -1,9 +1,9 @@
-from project.astronaut.geodesist import Geodesist
-from project.astronaut.biologist import Biologist
-from project.astronaut.meteorologist import Meteorologist
-from project.planet.planet import Planet
-from project.planet.planet_repository import PlanetRepository
-from project.astronaut.astronaut_repository import AstronautRepository
+from project import Geodesist
+from project import Biologist
+from project import Meteorologist
+from project import Planet
+from project import PlanetRepository
+from project import AstronautRepository
 
 
 class SpaceStation:

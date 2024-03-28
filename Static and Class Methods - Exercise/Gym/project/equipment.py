@@ -1,4 +1,4 @@
-from project.next_id_mixin import NextIdMixin
+from project import NextIdMixin
 
 
 class Equipment(NextIdMixin):

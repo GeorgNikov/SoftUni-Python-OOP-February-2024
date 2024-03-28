@@ -1,7 +1,7 @@
-from project.robots.female_robot import FemaleRobot
-from project.robots.male_robot import MaleRobot
-from project.services.main_service import MainService
-from project.services.secondary_service import SecondaryService
+from project import FemaleRobot
+from project import MaleRobot
+from project import MainService
+from project import SecondaryService
 
 
 class RobotsManagingApp:

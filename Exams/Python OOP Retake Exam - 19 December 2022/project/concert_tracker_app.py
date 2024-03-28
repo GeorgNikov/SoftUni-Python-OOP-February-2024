@@ -1,8 +1,8 @@
-from project.band import Band
-from project.band_members.drummer import Drummer
-from project.band_members.guitarist import Guitarist
-from project.band_members.singer import Singer
-from project.concert import Concert
+from project import Band
+from project import Drummer
+from project import Guitarist
+from project import Singer
+from project import Concert
 
 
 class ConcertTrackerApp:

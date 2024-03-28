@@ -1,4 +1,4 @@
-from project.horse_specification.horse import Horse
+from project import Horse
 
 
 class Thoroughbred(Horse):

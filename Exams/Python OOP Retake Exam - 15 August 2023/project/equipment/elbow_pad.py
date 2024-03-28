@@ -1,4 +1,4 @@
-from project.equipment.base_equipment import BaseEquipment
+from project import BaseEquipment
 
 
 class ElbowPad(BaseEquipment):

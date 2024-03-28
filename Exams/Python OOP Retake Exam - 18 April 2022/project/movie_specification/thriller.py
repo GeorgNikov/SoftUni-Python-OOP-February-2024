@@ -1,4 +1,4 @@
-from project.movie_specification.movie import Movie
+from project import Movie
 
 
 class Thriller(Movie):

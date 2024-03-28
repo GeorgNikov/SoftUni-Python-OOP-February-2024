@@ -1,4 +1,4 @@
-from project.player import Player
+from project import Player
 
 
 class Controller:

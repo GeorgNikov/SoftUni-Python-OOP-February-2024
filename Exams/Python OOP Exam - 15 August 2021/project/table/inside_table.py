@@ -1,4 +1,4 @@
-from project.table.table import Table
+from project import Table
 
 
 class InsideTable(Table):

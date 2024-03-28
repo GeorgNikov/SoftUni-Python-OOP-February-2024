@@ -1,7 +1,7 @@
-from project.equipment.elbow_pad import ElbowPad
-from project.equipment.knee_pad import KneePad
-from project.teams.indoor_team import IndoorTeam
-from project.teams.outdoor_team import OutdoorTeam
+from project import ElbowPad
+from project import KneePad
+from project import IndoorTeam
+from project import OutdoorTeam
 
 
 class Tournament:

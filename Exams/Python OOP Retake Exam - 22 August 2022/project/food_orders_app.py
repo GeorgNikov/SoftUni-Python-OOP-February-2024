@@ -1,4 +1,4 @@
-from project.client import Client
+from project import Client
 
 
 class FoodOrdersApp:

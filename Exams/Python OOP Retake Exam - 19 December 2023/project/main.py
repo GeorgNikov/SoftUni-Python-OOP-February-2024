@@ -1,5 +1,5 @@
 # Create an instance of SummitQuestManagerApp
-from project.summit_quest_manager_app import SummitQuestManagerApp
+from project import SummitQuestManagerApp
 
 climbing_app = SummitQuestManagerApp()
 

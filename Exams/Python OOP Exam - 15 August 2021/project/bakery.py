@@ -1,10 +1,9 @@
-from project.baked_food.bread import Bread
-from project.baked_food.cake import Cake
-from project.drink.tea import Tea
-from project.drink.water import Water
-from project.table.inside_table import InsideTable
-from project.table.outside_table import OutsideTable
-from project.table.table import Table
+from project import Bread
+from project import Cake
+from project import Tea
+from project import Water
+from project import InsideTable
+from project import OutsideTable
 
 
 class Bakery:

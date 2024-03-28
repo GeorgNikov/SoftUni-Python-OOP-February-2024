@@ -1,6 +1,6 @@
-from project.category import Category
-from project.document import Document
-from project.topic import Topic
+from project import Category
+from project import Document
+from project import Topic
 
 
 class Storage:

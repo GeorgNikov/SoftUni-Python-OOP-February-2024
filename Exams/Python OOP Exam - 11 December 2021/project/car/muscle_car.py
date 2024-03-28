@@ -1,4 +1,4 @@
-from project.car.car import Car
+from project import Car
 
 
 class MuscleCar(Car):

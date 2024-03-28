@@ -1,4 +1,4 @@
-from project.second_hand_car import SecondHandCar
+from project import SecondHandCar
 from unittest import TestCase, main
 
 

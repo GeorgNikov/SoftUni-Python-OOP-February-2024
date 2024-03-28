@@ -1,4 +1,4 @@
-from project.booths.booth import Booth
+from project import Booth
 
 
 class PrivateBooth(Booth):

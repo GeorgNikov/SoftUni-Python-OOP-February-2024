@@ -1,4 +1,4 @@
-from project.drink.drink import Drink
+from project import Drink
 
 
 class Tea(Drink):

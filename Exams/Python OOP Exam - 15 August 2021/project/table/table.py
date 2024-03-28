@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from project.baked_food.baked_food import BakedFood
-from project.drink.drink import Drink
+from project import BakedFood
+from project import Drink
 
 
 class Table(ABC):

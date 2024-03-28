@@ -1,4 +1,4 @@
-from project.services.base_service import BaseService
+from project import BaseService
 
 
 class MainService(BaseService):

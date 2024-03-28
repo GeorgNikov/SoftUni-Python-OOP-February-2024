@@ -1,7 +1,7 @@
-from project.route import Route
-from project.user import User
-from project.vehicles.cargo_van import CargoVan
-from project.vehicles.passenger_car import PassengerCar
+from project import Route
+from project import User
+from project import CargoVan
+from project import PassengerCar
 
 
 class ManagingApp:

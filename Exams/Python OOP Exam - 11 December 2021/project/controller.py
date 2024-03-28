@@ -1,7 +1,7 @@
-from project.car.muscle_car import MuscleCar
-from project.car.sports_car import SportsCar
-from project.driver import Driver
-from project.race import Race
+from project import MuscleCar
+from project import SportsCar
+from project import Driver
+from project import Race
 
 
 class Controller:

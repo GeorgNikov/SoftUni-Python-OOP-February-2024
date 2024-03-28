@@ -1,4 +1,4 @@
-from project.planet.planet import Planet
+from project import Planet
 
 
 class PlanetRepository:

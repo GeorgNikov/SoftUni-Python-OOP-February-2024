@@ -1,4 +1,4 @@
-from project.animals.animal import Animal
+from project import Animal
 
 
 class Lion(Animal):

@@ -1,4 +1,4 @@
-from project.supply.supply import Supply
+from project import Supply
 
 
 class Player:

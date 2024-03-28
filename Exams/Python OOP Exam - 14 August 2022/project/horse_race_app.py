@@ -1,7 +1,7 @@
-from project.horse_race import HorseRace
-from project.horse_specification.appaloosa import Appaloosa
-from project.horse_specification.thoroughbred import Thoroughbred
-from project.jockey import Jockey
+from project import HorseRace
+from project import Appaloosa
+from project import Thoroughbred
+from project import Jockey
 
 
 class HorseRaceApp:

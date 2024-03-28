@@ -1,4 +1,4 @@
-from project.band_members.musician import Musician
+from project import Musician
 
 
 class Guitarist(Musician):

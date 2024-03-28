@@ -1,4 +1,4 @@
-from project.robots.base_robot import BaseRobot
+from project import BaseRobot
 
 
 class FemaleRobot(BaseRobot):
