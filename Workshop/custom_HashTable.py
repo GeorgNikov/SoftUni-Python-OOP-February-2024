@@ -1,3 +1,4 @@
+
 class HashTable:
 
     def __init__(self):
@@ -46,6 +47,21 @@ class HashTable:
         except ValueError:
             return None
 
+    def sort(self):
+        copy_keys = [el for el in self.__keys if el is not None]
+        copy_values = [el for el in self.__values if el is not None]
+
+        result = list(zip(copy_keys, copy_values))
+        sorted_result = sorted(result, key=lambda t: t[0])
+        table = HashTable()
+        table._HashTable__keys = [t[0] for t in sorted_result]
+        table._HashTable__values = [t[1] for t in sorted_result]
+        table._HashTable__length = self.__length
+        diff = self.__length - self.count
+        table._HashTable__keys = table._HashTable__keys + [None] * diff
+        table._HashTable__values = table._HashTable__values + [None] * diff
+        return table
+
     def __getitem__(self, item):
         try:
             index = self.__keys.index(item)
@@ -62,18 +78,19 @@ class HashTable:
         return "{" + ', '.join(result) + "}"
 
 
-table = HashTable()
-
-table['name'] = 'Peter'
-table['age'] = 25
-table['id'] = 1
-table['city'] = 'London'
-table['street'] = 'Main Str.'
-table['name'] = 'Georgi'
-
-print(table)
-print(table.get('name'))
-print(table['age'])
-table.add('number', "8")
-
-print(len(table))
+# table = HashTable()
+#
+# table['name'] = 'Peter'
+# table['age'] = 25
+# table['id'] = 1
+# table['city'] = 'London'
+# table['street'] = 'Main Str.'
+# table['name'] = 'Georgi'
+#
+# print(table)
+# print(table.sort())
+# print(table.get('name'))
+# print(table['age'])
+# table.add('number', "8")
+#
+# print(len(table))
